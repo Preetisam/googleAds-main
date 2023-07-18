@@ -1,0 +1,219 @@
+
+   
+.txt--dark .hs-form-field > label {
+  color: #fff;
+}
+
+.txt--dark .hs_error_rollup {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+/* Full */
+
+.form--btn-full .hs-button {
+  width: 100%;
+}
+
+/* Outline */
+
+.form--btn-outline .hs-button {
+  background: none;
+  border: 2px solid #F65954;
+  color: #F65954;
+}
+
+.form--btn-outline .hs-button:hover {
+  border: 0;
+  background: linear-gradient(111.02deg, #F5693F 0%, #F53F71 100%);
+  color: #fff;
+}
+
+/* Small */
+
+.form--btn-small .hs-button {
+  padding: 0.45rem 0.68rem;
+  border-radius: 8px;
+  font-size: .83rem;
+}
+
+.form--btn-small.form--btn-outline .hs-button:not(:hover) {
+  padding: calc(0.45rem - 2px) calc(0.68rem - 2px);
+}
+
+/* Medium */
+
+.form--btn-medium .hs-button {
+  padding: 0.64rem 0.91rem;
+  border-radius: 10px;
+  font-size: .89rem;
+}
+
+.form--btn-medium.form--btn-outline .hs-button:not(:hover) {
+  padding: calc(0.64rem - 2px) calc(0.91rem - 2px);
+}
+
+/* Large */
+
+.form--btn-large .hs-button {
+  padding: 0.91rem 1.36rem;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.form--btn-large.form--btn-outline .hs-button:not(:hover) {
+  padding: calc(0.91rem - 2px) calc(1.36rem - 2px);
+}
+
+/* Dark */
+
+.form--btn-dark.form--btn-outline .hs-button {
+  border-color: #222326;
+  color: #222326;
+}
+
+.form--btn-dark.form--btn-fill .hs-button,
+.form--btn-dark.form--btn-outline .hs-button:hover {
+  background: #222326;
+  color: #fff;
+}
+
+.form--btn-dark .hs-button:focus:not(:hover):not(:active) {
+  box-shadow: 0 0 0 3px rgba(34, 35, 38, .15);
+}
+
+/* Light */
+
+.form--btn-light.form--btn-outline .hs-button {
+  border-color: #E3E6EC;
+  color: #222326;
+}
+
+.form--btn-light.form--btn-fill .hs-button,
+.form--btn-light.form--btn-outline .hs-button:hover {
+  background: #F8F9FB;
+  color: #222326;
+}
+
+.form--btn-light .hs-button:focus:not(:hover):not(:active) {
+  box-shadow: 0 0 0 3px rgba(227, 230, 236, .15);
+}
+
+/* White */
+
+.form--btn-white.form--btn-outline .hs-button {
+  border-color: #fff;
+  color: #fff;
+}
+
+.form--btn-white.form--btn-fill .hs-button,
+.form--btn-white.form--btn-outline .hs-button:hover {
+  background: #fff;
+  color: #222326;
+}
+
+.form--btn-white .hs-button:focus:not(:hover):not(:active) {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .15);
+}
+
+/* Ghost */
+
+.form--btn-ghost.form--btn-outline .hs-button {
+  border-color: rgba(255, 255, 255, .2);
+  color: #fff;
+}
+
+.form--btn-ghost.form--btn-fill .hs-button {
+  background: rgba(255, 255, 255, .2);
+  color: #fff;
+}
+
+.form--btn-ghost.form--btn-outline .hs-button:hover,
+.form--btn-ghost.form--btn-fill .hs-button:hover {
+  background: #fff;
+  color: #222326;
+}
+
+.form--btn-ghost .hs-button:focus:not(:hover):not(:active) {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .15);
+}
+
+/* Pill */
+
+.form--btn-pill .hs-button {
+  border-radius: 999px;
+}
+
+/* ==========================================================================
+   Hidden labels
+   ========================================================================== */
+
+/* For compact forms that use placeholders instead of labels, though, for the
+best user experience labels are recommended. */
+
+.form--hidden-labels .field:not(.hs-fieldtype-checkbox):not(.hs-fieldtype-radio):not(.hs-fieldtype-file):not(.hs-fieldtype-date) > label,
+.form--hidden-labels .field:not(.hs-fieldtype-checkbox):not(.hs-fieldtype-radio):not(.hs-fieldtype-file):not(.hs-fieldtype-date) > legend {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+
+/* ==========================================================================
+   Box
+   ========================================================================== */
+
+.form--box {
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 24px;
+}
+
+.form--box-border {
+  border: 2px solid;
+}
+
+.form--box-border.form--light {
+  border-color: #E3E6EC;
+}
+
+.form--box-border.form--dark {
+  border-color: rgba(255, 255, 255, .2);
+}
+
+.form--box-accent {
+  background: linear-gradient(111.02deg, #F5693F 0%, #F53F71 100%);
+  box-shadow: 0px 16px 32px rgba(246, 89, 84, 0.2), 0px 8px 16px rgba(246, 89, 84, 0.2);
+}
+
+.form--box-dark {
+  background: #222326;
+  box-shadow: 0px 16px 32px rgba(34, 35, 38, 0.05), 0px 8px 16px rgba(34, 35, 38, 0.05);
+}
+
+.form--box-light {
+  background: #F8F9FB;
+}
+
+.form--box-white {
+  background: #fff;
+  box-shadow: 0px 16px 32px rgba(34, 35, 38, 0.05), 0px 8px 16px rgba(34, 35, 38, 0.05);
+}
+
+.form--box-ghost {
+  background: rgba(255, 255, 255, .1);
+}
+
+.form__box-content {
+  margin: 0 auto;
+}
+
+@media (max-width: 479px) {
+  .form--box
+    padding: 24px;
+  }
+}
